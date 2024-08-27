@@ -35,7 +35,7 @@ const Photos = () => {
 
         {/* Circle */}
         <motion.svg
-          className="w-[300px] h-[300px] xl:w-[506px] xl:h-[506px]"
+          className="w-[300px] h-[300px] xl:w-[450px] xl:h-[450px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const Photos = () => {
           <motion.circle
             cx="253"
             cy="253"
-            r="180"
+            r="200"
             stroke="#00ff99"
             strokeWidth="4"
             strokeLinecap="round"

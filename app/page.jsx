@@ -3,11 +3,11 @@ import { FiDownload } from "react-icons/fi";
 import Socials from "@/components/Socials";
 import Photos from "@/components/Photos";
 import Stats from "@/components/Stats";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <section className="h-full">
-
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-">
           {/* Text */}
@@ -17,22 +17,25 @@ export default function Home() {
               Hello I&apos;m <br />
               <span className="text-accent">Jewel Hossain Fahim</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              I exel at crafting elegant digital experience and I am proficient
-              in various programming languages and technologies
+            <p className="max-w-[570px] mb-9 text-white/80">
+              I specialize in crafting elegant digital experiences, with a
+              strong proficiency in a diverse range of programming languages and
+              technologies.
             </p>
 
             {/* btn & socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
+              <Link href="https://drive.google.com/file/d/15B6cxhJ8z_cXMghkfksIVvTZDgIB-kYb/view" target="_blank">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
 
-                <FiDownload className="text-xl" />
-              </Button>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"

@@ -6,8 +6,17 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaBootstrap,
+  FaGithub,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiMongodb,
+  SiExpress,
+} from "react-icons/si";
+import { TbBrandRedux } from "react-icons/tb";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -22,7 +31,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus sint quisquam animi nisi magni.",
+    "Hello! I'm Fahim, a Frontend Developer from Bangladesh, passionate about crafting captivating UI effects, animations, and dynamic user interfaces. I'm an organized problem solver with a keen eye for detail, and I enjoy exploring new places whenever I can.",
   info: [
     {
       fieldName: "Name",
@@ -64,22 +73,27 @@ const education = {
   icon: "",
   title: "My education",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, laborum delectus perspiciatis adipisci esse aliquid.",
+    "I hold a B.Sc. in Engineering, specializing in Computer Science and Engineering (CSE).",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
+      institution: "Programming Hero",
+      degree: "Complete Web Development",
       duration: "2022",
     },
     {
-      institution: "Codeademy",
-      degree: "Frondt-end Track",
-      duration: "2021",
+      institution: "BUBT",
+      degree: "Bs.C Engg. in CSE",
+      duration: "2017 - 2021",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      institution: "HSC",
+      degree: "SRCC",
+      duration: "2013 - 2015",
+    },
+    {
+      institution: "SSC",
+      degree: "Govt. Science School",
+      duration: "2013",
     },
   ],
 };
@@ -89,22 +103,17 @@ const experience = {
   icon: "",
   title: "My experience",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, laborum delectus perspiciatis adipisci esse aliquid.",
+    "As a frontend developer, I've contributed to two companies, sharpening my skills in crafting responsive and user-focused interfaces. My work has consistently focused on delivering high-quality digital products using modern web technologies.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "CloudySign",
+      position: "Frontend Developer",
+      duration: "2023.Dec - Present",
     },
     {
-      company: "Web Design Studio",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Digital Agency",
-      position: "Front-End Developer Intern",
-      duration: "2018 - 2019",
+      company: "MicroBuddy",
+      position: "Jr.Frontend Developer",
+      duration: "2023.Feb - 2023.Dec",
     },
   ],
 };
@@ -114,7 +123,7 @@ const skills = {
   icon: "",
   title: "My skills",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, laborum delectus perspiciatis adipisci esse aliquid.",
+    "I have a strong command of frontend technologies, enabling me to create modern, responsive web applications. My expertise spans various tools and frameworks in frontend & backend development.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -129,12 +138,24 @@ const skills = {
       name: "javascript",
     },
     {
+      icon: <SiTypescript />,
+      name: "typescript",
+    },
+    {
       icon: <FaReact />,
       name: "react.js",
     },
     {
+      icon: <TbBrandRedux />,
+      name: "redux",
+    },
+    {
       icon: <SiNextdotjs />,
       name: "next.js",
+    },
+    {
+      icon: <FaBootstrap />,
+      name: "bootstrap.css",
     },
     {
       icon: <SiTailwindcss />,
@@ -143,6 +164,18 @@ const skills = {
     {
       icon: <FaNodeJs />,
       name: "node.js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "express ",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "mongodb",
+    },
+    {
+      icon: <FaGithub />,
+      name: "github ",
     },
     {
       icon: <FaFigma />,
@@ -177,14 +210,14 @@ const Resume = () => {
           <div className="min-h-[70vh] w-full">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[25px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className=" text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
 
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-c lg:grid-cols-2 gap-[30px]">
+                  <ul className="grid lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
                         <li
@@ -212,12 +245,12 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className=" text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
 
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-c lg:grid-cols-2 gap-[30px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
                         <li
@@ -243,21 +276,21 @@ const Resume = () => {
 
             {/* skills */}
             <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[20px]">
+                <div className="flex flex-col gap-[20px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className=" text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[20px]">
                   {skills.skillList.map((skill, index) => {
                     return (
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                            <TooltipTrigger className="w-full h-[90px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-5xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
@@ -273,14 +306,14 @@ const Resume = () => {
               </div>
             </TabsContent>
 
-            {/* experience */}
+            {/* about */}
             <TabsContent
               value="about"
               className="w-full text-center xl:text-left"
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className=" text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">

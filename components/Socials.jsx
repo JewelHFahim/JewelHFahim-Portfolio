@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
-import { FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FiLinkedin />, path: "" },
-  { icon: <FaYoutube />, path: "" },
-  { icon: <FaTwitter />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/JewelHFahim" },
+  { icon: <FiLinkedin />, path: "https://www.linkedin.com/in/jewelhfahim/" },
+  { icon: <FaFacebook/>, path: "https://www.facebook.com/jewelhfahim" },
+  { icon: <FaTwitter />, path: "https://x.com/jewelhfahim" },
 ];
 const Socials = ({ containerStyles, iconStyles }) => {
   return (
