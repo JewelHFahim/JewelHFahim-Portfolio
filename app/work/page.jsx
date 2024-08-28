@@ -18,36 +18,65 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Fullstack",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, veritatis.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/img1.png",
-    live: "",
-    github: "",
+      "EpikMovie is a comprehensive movie streaming and download platform that provides users with a seamless experience for both streaming and downloading their favorite movies. As the frontend developer, I took charge of the entire client-side development, ensuring a user-friendly interface and efficient functionality.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3" },
+      { name: "Javascript" },
+      { name: "React" },
+      { name: "Redux" },
+      { name: "Hls" },
+      { name: "Video.js" },
+      { name: "Swiper" },
+      { name: "Slick-Slider" },
+    ],
+    image: "/assets/epickmovies.PNG",
+    live: "https://epicmovies-bd.netlify.app/",
+    github: "https://github.com/JewelHFahim/epickmovie",
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "Frontend",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, veritatis.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/img2.png",
-    live: "",
-    github: "",
+      "I developed a fully responsive frontend project using modern web technologies to create a seamless user experience across devices. The project leverages the power of HTML5 , CSS3 & Tailwind for a robust and accessible structure, combined with React to manage dynamic UI components and state.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3" },
+      { name: "Tailwind.css" },
+      { name: "React" },
+      { name: "React-router" },
+      { name: "Swiper" },
+      { name: "React-Icons" },
+      { name: "React-modern-drawer" },
+    ],
+    image: "/assets/spagreen.PNG",
+    live: "https://spagreen.netlify.app/",
+    github: "https://github.com/JewelHFahim/SpaGreen",
   },
   {
     num: "03",
-    category: "frontend",
+    category: "Fullstack",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, veritatis.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/img3.png",
-    live: "",
-    github: "",
+      "Fire Cutter is a responsive fullstack e-commerce application designed to offer a smooth and engaging shopping experience. The project combines a powerful CMS Wix Headless Studio backend with a modern frontend stack, including Next.js, to deliver a dynamic and high-performing online store.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3" },
+      { name: "Tailwind.css" },
+      { name: "Next.js" },
+      { name: "zustand" },
+      { name: "zustand" },
+      { name: "react-confetti" },
+      { name: "react-hot-toas" },
+      { name: "wix studio" },
+    ],
+    image: "/assets/firecutter.PNG",
+    live: "https://fire-cutter-ecommerce.vercel.app/",
+    github: "https://github.com/JewelHFahim/FireCutter-Ecommerce",
   },
 ];
 
@@ -68,27 +97,28 @@ const WorkPage = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+      className="min-h-[80vh] flex flex-col justify-center py-8 xl:px-0"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
+          {/* text */}
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
+            <div className="flex flex-col gap-[20px] h-[50%]">
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <div className="text-6xl lg:text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className=" text-[30px] lg:text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-2">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className=" text-accent">
                       {item.name}
                       {/* remove the last comma */}
                       {index !== project.stack.length - 1 && ","}
@@ -101,11 +131,11 @@ const WorkPage = () => {
               {/* button */}
               <div className="flex items-center gap-4">
                 {/* Live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsArrowUpRight className="text-white text-2xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live Project</p>
@@ -115,11 +145,11 @@ const WorkPage = () => {
                 </Link>
 
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-2xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Github Reopository</p>
@@ -131,6 +161,7 @@ const WorkPage = () => {
             </div>
           </div>
 
+          {/* slider */}
           <div className="w-full xl:w-[50%]">
             <Swiper
               spaceBetween={30}
@@ -140,7 +171,7 @@ const WorkPage = () => {
             >
               {projects.map((project, index) => {
                 return (
-                  <SwiperSlide key={index} className="w-full">
+                  <SwiperSlide key={index} className="w-full cursor-pointer">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overly */}
                       <div className="absolute top-0 bottom-0 bg-black/10 z-10 w-full h-full"></div>

@@ -112,8 +112,13 @@ const experience = {
     },
     {
       company: "MicroBuddy",
-      position: "Jr.Frontend Developer",
+      position: "Jr. Frontend Developer",
       duration: "2023.Feb - 2023.Dec",
+    },
+    {
+      company: "Foresight IT",
+      position: "Digital Marketing Executive",
+      duration: "2022.Aug - 2023.Jul",
     },
   ],
 };
