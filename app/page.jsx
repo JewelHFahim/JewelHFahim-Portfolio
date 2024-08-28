@@ -25,7 +25,7 @@ export default function Home() {
 
             {/* btn & socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="https://drive.google.com/file/d/15B6cxhJ8z_cXMghkfksIVvTZDgIB-kYb/view" target="_blank">
+              <Link href="https://drive.google.com/file/d/1b6NV6602VqtwLR2V_hXH_f8x7uplyg4-/view?usp=sharing" target="_blank">
                 <Button
                   variant="outline"
                   size="lg"

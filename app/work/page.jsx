@@ -69,7 +69,6 @@ const projects = [
       { name: "Tailwind.css" },
       { name: "Next.js" },
       { name: "zustand" },
-      { name: "zustand" },
       { name: "react-confetti" },
       { name: "react-hot-toas" },
       { name: "wix studio" },
@@ -77,6 +76,27 @@ const projects = [
     image: "/assets/firecutter.PNG",
     live: "https://fire-cutter-ecommerce.vercel.app/",
     github: "https://github.com/JewelHFahim/FireCutter-Ecommerce",
+  },
+  {
+    num: "04",
+    category: "Frontend",
+    title: "project 4",
+    description:
+      "I developed a responsive casino blog and service app using React, Tailwind, and a range of libraries like Swiper, Google-Map-React, and Redux. The app features dynamic content, smooth animations, and interactive maps, all while ensuring seamless navigation and performance across devices.",
+    stack: [
+      { name: "Tailwind" },
+      { name: "React" },
+      { name: "redux" },
+      { name: "Swiper" },
+      { name: "React Icons" },
+      { name: "React Router" },
+      { name: "React-CountUp" },
+      { name: "Google-Map-React, " },
+      { name: "React-Type-Animation" },
+    ],
+    image: "/assets/credesign.PNG",
+    live: "https://credesign-bd.netlify.app/",
+    github: "https://github.com/JewelHFahim/CreDesign",
   },
 ];
 
@@ -172,7 +192,7 @@ const WorkPage = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full cursor-pointer">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-transparent p-5 border border-white/5">
                       {/* overly */}
                       <div className="absolute top-0 bottom-0 bg-black/10 z-10 w-full h-full"></div>
                       {/* image */}
