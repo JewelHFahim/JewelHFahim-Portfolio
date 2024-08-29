@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-">
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Frontend Developer</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />
               <span className="text-accent">Jewel Hossain Fahim</span>
@@ -25,7 +25,7 @@ export default function Home() {
 
             {/* btn & socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="https://drive.google.com/file/d/1b6NV6602VqtwLR2V_hXH_f8x7uplyg4-/view?usp=sharing" target="_blank">
+              <Link href="https://drive.google.com/file/d/1079dw67i7IUp7KeTjUj3vuPcyGUTKX7r/view?usp=sharing" target="_blank">
                 <Button
                   variant="outline"
                   size="lg"
