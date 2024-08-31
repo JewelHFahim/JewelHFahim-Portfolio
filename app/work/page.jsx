@@ -77,6 +77,7 @@ const projects = [
     live: "https://fire-cutter-ecommerce.vercel.app/",
     github: "https://github.com/JewelHFahim/FireCutter-Ecommerce",
   },
+
   {
     num: "04",
     category: "Frontend",
@@ -97,6 +98,25 @@ const projects = [
     image: "/assets/credesign.PNG",
     live: "https://credesign-bd.netlify.app/",
     github: "https://github.com/JewelHFahim/CreDesign",
+  },
+
+  {
+    num: "05",
+    category: "Frontend",
+    title: "project 5",
+    description:
+      "IPTV Service Provider is a responsive frontend application designed to deliver a seamless user experience for IPTV services. Built using modern technologies like Next.js, Tailwind CSS, and a suite of powerful React libraries.",
+    stack: [
+      { name: "Tailwind" },
+      { name: "Next.js" },
+      { name: "Swiper" },
+      { name: "React Icons" },
+      { name: "React-CountUp" },
+      { name: "Google-Map-React, " },
+    ],
+    image: "/assets/iptv.PNG",
+    live: "https://iptv-bd.vercel.app/",
+    github: "https://github.com/JewelHFahim/IpTv",
   },
 ];
 
@@ -192,7 +212,7 @@ const WorkPage = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full cursor-pointer">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-transparent p-5 border border-white/5">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-transparent lg:p-5 border border-white/5">
                       {/* overly */}
                       <div className="absolute top-0 bottom-0 bg-black/10 z-10 w-full h-full"></div>
                       {/* image */}
