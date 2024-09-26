@@ -6,7 +6,7 @@ const Stats = () => {
 
   const stats = [
     {
-      num: 1,
+      num: 2,
       text: "Year of experience",
     },
     {
@@ -23,7 +23,7 @@ const Stats = () => {
     },
   ];
   return (
-    <section className="mt-4 pb-12 xl:pt-8 xl:pb-0">
+    <section className="mt-4 xl:pb-0">
       <div className="container mx-auto">
 
         <div className="flex flex-wrap gap-6 mx-auto xl:max-w-none">

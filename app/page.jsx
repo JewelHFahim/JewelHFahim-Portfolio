@@ -7,7 +7,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="h-full">
+    <section className="h-[calc(100vh-150px)] flex flex-col justify-between">
+
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-">
           {/* Text */}
