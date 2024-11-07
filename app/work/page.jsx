@@ -34,7 +34,7 @@ const projects = [
       { name: "Slick-Slider" },
     ],
     image: "/assets/epickmovies.PNG",
-    live: "https://epicmovies-bd.netlify.app/",
+    live: "https://epickmovies.com/",
     github: "https://github.com/JewelHFahim/epickmovie",
   },
   {
