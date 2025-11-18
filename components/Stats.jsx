@@ -6,22 +6,23 @@ const Stats = () => {
 
   const stats = [
     {
-      num: 2,
+      num: 3,
       text: "Year of experience",
     },
     {
-      num: 10,
+      num: 15,
       text: "Project completed",
     },
     {
-      num: 8,
+      num: 10,
       text: "Technologies mastered",
     },
     {
-      num: 500,
+      num: 5000,
       text: "Code commits",
     },
   ];
+
   return (
     <section className="mt-4 xl:pb-0">
       <div className="container mx-auto">

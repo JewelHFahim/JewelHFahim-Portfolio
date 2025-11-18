@@ -19,21 +19,21 @@ const Service = () => {
         "I optimize websites to improve search engine visibility, driving organic traffic and enhancing online presence. My approach focuses on both technical SEO and content strategy to achieve sustainable, high-ranking results.",
       href: "",
     },
-    {
-      num: "03",
-      title: "UI/UX Design",
-      description:
-        "I craft intuitive and visually appealing interfaces, ensuring that user experiences are both engaging and seamless. Aesthetics with functionality to create designs that are both beautiful and user-friendly.",
-      href: "",
-    },
+    // {
+    //   num: "03",
+    //   title: "UI/UX Design",
+    //   description:
+    //     "I craft intuitive and visually appealing interfaces, ensuring that user experiences are both engaging and seamless. Aesthetics with functionality to create designs that are both beautiful and user-friendly.",
+    //   href: "",
+    // },
     
-    {
-      num: "04",
-      title: "Digital Marketing",
-      description:
-        "I develop strategic digital marketing campaigns that engage audiences and drive growth. My approach combines creativity with data-driven insights to deliver impactful results across various online platforms.",
-      href: "",
-    },
+    // {
+    //   num: "04",
+    //   title: "Digital Marketing",
+    //   description:
+    //     "I develop strategic digital marketing campaigns that engage audiences and drive growth. My approach combines creativity with data-driven insights to deliver impactful results across various online platforms.",
+    //   href: "",
+    // },
   ];
 
   return (
