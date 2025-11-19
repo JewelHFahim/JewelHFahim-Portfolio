@@ -32,10 +32,10 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "1.9+ Years",
+      fieldValue: "2.5+ Years",
     },
     {
-      fieldName: "Skype",
+      fieldName: "Linkedin",
       fieldValue: "jewelhfahim",
     },
     {
