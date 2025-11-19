@@ -31,7 +31,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "Hello! I'm Fahim, a Frontend Developer from Bangladesh, passionate about crafting captivating UI effects, animations, and dynamic user interfaces. I'm an organized problem solver with a keen eye for detail, and I enjoy exploring new places whenever I can.",
+    "I work as a full stack developer, building everything from intuitive interfaces to efficient backend systems. My experience spans real-time features, scalable APIs, and modern web application architecture.",
   info: [
     {
       fieldName: "Name",
@@ -106,19 +106,19 @@ const experience = {
     "As a frontend developer, I've contributed to two companies, sharpening my skills in crafting responsive and user-focused interfaces. My work has consistently focused on delivering high-quality digital products using modern web technologies.",
   items: [
     {
+      company: "QuantumEdge",
+      position: "Full-stack Developer",
+      duration: "2025.Feb - Present",
+    },
+    {
       company: "CloudySign",
       position: "Frontend Developer",
-      duration: "2023.Dec - Present",
+      duration: "2023.Dec - 2025.Feb",
     },
     {
       company: "MicroBuddy",
       position: "Jr. Frontend Developer",
       duration: "2023.Feb - 2023.Dec",
-    },
-    {
-      company: "Foresight IT",
-      position: "Digital Marketing Executive",
-      duration: "2022.Aug - 2023.Jul",
     },
   ],
 };
