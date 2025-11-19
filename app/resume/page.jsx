@@ -1,22 +1,4 @@
 "use client";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-  FaBootstrap,
-  FaGithub,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiTypescript,
-  SiMongodb,
-  SiExpress,
-} from "react-icons/si";
-import { TbBrandRedux } from "react-icons/tb";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -26,6 +8,13 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+
+
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGithub, FaFigma } from "react-icons/fa";
+import { TbBrandRedux } from "react-icons/tb";
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb, SiPostgresql, SiMysql, SiPrisma, SiSocketdotio, SiJsonwebtokens, SiSwagger, SiVercel, SiRender, SiDocker, SiNginx, SiPostman, SiRedis, SiCloudflare } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+
 
 // about data
 const about = {
@@ -124,70 +113,113 @@ const experience = {
 };
 
 // skills data
+// const skills = {
+//   icon: "",
+//   title: "My skills",
+//   description:"Building reliable full stack applications with modern tools and clean, maintainable code.",
+//   skillList: [
+//     {
+//       icon: <FaHtml5 />,
+//       name: "html 5",
+//     },
+//     {
+//       icon: <FaCss3 />,
+//       name: "css 3",
+//     },
+//     {
+//       icon: <FaJs />,
+//       name: "javascript",
+//     },
+//     {
+//       icon: <SiTypescript />,
+//       name: "typescript",
+//     },
+//     {
+//       icon: <FaReact />,
+//       name: "react.js",
+//     },
+//     {
+//       icon: <TbBrandRedux />,
+//       name: "redux",
+//     },
+//     {
+//       icon: <SiNextdotjs />,
+//       name: "next.js",
+//     },
+//     {
+//       icon: <FaBootstrap />,
+//       name: "bootstrap.css",
+//     },
+//     {
+//       icon: <SiTailwindcss />,
+//       name: "tailwind.css",
+//     },
+//     {
+//       icon: <FaNodeJs />,
+//       name: "node.js",
+//     },
+//     {
+//       icon: <SiExpress />,
+//       name: "express ",
+//     },
+//     {
+//       icon: <SiMongodb />,
+//       name: "mongodb",
+//     },
+//     {
+//       icon: <FaGithub />,
+//       name: "github ",
+//     },
+//     {
+//       icon: <FaFigma />,
+//       name: "figma",
+//     },
+//   ],
+// };
+
 const skills = {
-  icon: "",
-  title: "My skills",
+  title: "Full Stack Skillset",
+  tagline: "A balanced stack for building responsive interfaces, fast APIs, and real-time features.",
   description:
-    "I have a strong command of frontend technologies, enabling me to create modern, responsive web applications. My expertise spans various tools and frameworks in frontend & backend development.",
+    "I work across the full stack, using modern tools and frameworks to build scalable, production-ready applications.",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <SiTypescript />,
-      name: "typescript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <TbBrandRedux />,
-      name: "redux",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <FaBootstrap />,
-      name: "bootstrap.css",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <SiExpress />,
-      name: "express ",
-    },
-    {
-      icon: <SiMongodb />,
-      name: "mongodb",
-    },
-    {
-      icon: <FaGithub />,
-      name: "github ",
-    },
-    {
-      icon: <FaFigma />,
-      name: "figma",
-    },
+    // Frontend
+    { icon: <FaHtml5 />, name: "HTML5" },
+    { icon: <FaCss3 />, name: "CSS3" },
+    { icon: <FaJs />, name: "JavaScript" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <TbBrandRedux />, name: "Redux Toolkit" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <FaBootstrap />, name: "Bootstrap" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon: <FaFigma />, name: "Figma" },
+
+    // Backend & APIs
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <SiExpress />, name: "Express.js" },
+    { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },           // NEW
+    { icon: <SiMysql />, name: "MySQL" },                     // NEW
+    { icon: <SiPrisma />, name: "Prisma ORM" },               // NEW
+    { icon: <SiSocketdotio />, name: "Socket.io" },           // NEW
+    { icon: <SiJsonwebtokens />, name: "JWT Auth" },          // NEW
+    { icon: <SiSwagger />, name: "Swagger API Docs" },        // NEW
+
+    // DevOps & Tools
+    { icon: <FaGithub />, name: "Git & GitHub" },
+    { icon: <SiVercel />, name: "Vercel" },                   // NEW
+    { icon: <SiRender />, name: "Render" },                   // NEW
+    { icon: <SiDocker />, name: "Docker" },                   // NEW
+    { icon: <SiNginx />, name: "Nginx" },                     // NEW
+
+    // Extra Useful Tools
+    { icon: <SiPostman />, name: "Postman" },                 // NEW
+    { icon: <SiRedis />, name: "Redis" },                     // NEW
+    { icon: <SiCloudflare />, name: "Cloudflare" },           // NEW
   ],
 };
+
 
 const Resume = () => {
   return (
