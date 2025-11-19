@@ -13,15 +13,13 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-">
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Full-Stack Software Developer</span>
             <h1 className="h1 mb-6">
-              Hello I&apos;m <br />
+              Hi I&apos;m <br />
               <span className="text-accent">Jewel Hossain Fahim</span>
             </h1>
             <p className="max-w-[570px] mb-9 text-white/80">
-              I specialize in crafting elegant digital experiences, with a
-              strong proficiency in a diverse range of programming languages and
-              technologies.
+              I design and build end-to-end web applications, from responsive interfaces to scalable backends, using modern JavaScript technologies.
             </p>
 
             {/* btn & socials */}

@@ -50,9 +50,9 @@ const Contact = () => {
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-4 p-5 bg-[#27272c] rounded-xl">
-              <h3 className="text-3xl text-accent">Let&apos;s work together</h3>
+              <h3 className="text-2xl text-accent">Let&apos;s work together</h3>
               <p>
-              If you're looking for someone to bring your digital projects to life, I'm here to help.
+              If you need someone to bring your ideas to life, I&apos;m ready to help.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
